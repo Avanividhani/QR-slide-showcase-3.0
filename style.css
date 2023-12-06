@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #252a32;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 80rem;
+  width: 100%;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.main .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.main .card {
+  color: #252a32;
+  border-radius: 2px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+.main .card-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  /* padding-top: 70%; */
+  background: #ffffff;
+}
+.main .card-image img {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  .main .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+
+
+.main1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* Hide any content overflow */
+}
+
+.main1 a {
+  text-align: center; /* Center the link and image */
+  display: block;
+}
+
+.main1 img {
+  width: 100%;
+  max-width: 80%; /* Adjust as needed */
+  height: auto;
+  object-fit: contain; /* Maintain aspect ratio while fitting within the container */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .main1 img {
+    max-width: 90%; /* Adjust as needed for smaller screens */
+  }
+}
+
+
+
+/* Your existing styles for the image gallery and Screen 1 */
+/* ... */
+
+/* New styles for Screen 2 */
+
+
+
+button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.main2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+/*   justify-content: space-around; */
+  align-items: center;
+  margin: -10px; /* Negative margin to reduce white space */
+}
+
+.container2 a {
+  text-align: center;
+  text-decoration: none;
+  color: #252a32;
+  width: calc(33.33% - 20px); /* Three items in a row with minimal space, adjust as needed */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.container2 img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container2 p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .container2 a {
+    width: calc(33.33% - 20px); /* Two items in a row on tablets */
+  }
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .container2 a {
+    width: calc(33.33% - 20px);/* Single column on phones */
+  }
+
+
+
+
+
+
+.main button {
+  padding: 12px 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.main button:hover {
+  background-color: #2980b9; /* Darker color on hover */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .main a {
+    width: 100%; /* Make the button full width on small screens */
+  }
+}
+
+
