@@ -13,17 +13,29 @@
 <body>
     <div class="header">
     <div class="theme-section">
-      <div class="theme-name">
-        <img src="https://i.ibb.co/8bVxZzN/theme-image.jpg" alt="Theme Image">
-      </div>
+        <div class="theme-name">
+            <img src="https://i.ibb.co/8bVxZzN/theme-image.jpg" alt="Theme Image">
+        </div>
     </div>
-    <div class="download-button">
-      <!-- Add an id to the download button -->
-      <a href="https://drive.google.com/u/0/uc?id=1itH773OyJm35jsVjRqOpCfSFZOLRDZKZ&export=download" download="theme.pdf">
-      <img src="https://i.ibb.co/xgSpwbZ/download-button.png" alt="Download PDF">
-    </a>
-    </div>
+    <div class="video-button">
+      <img src="https://i.ibb.co/fM13pj8/play-button.png" onclick="openVideo()">
   </div>
+    <div class="download-button">
+        <a href="https://drive.google.com/u/0/uc?id=1itH773OyJm35jsVjRqOpCfSFZOLRDZKZ&export=download" download="theme.pdf">
+            <img src="https://i.ibb.co/xgSpwbZ/download-button.png" alt="Download PDF">
+        </a>
+    </div>
+</div>
+
+<div id="videoModal" class="modal1" onclick="closeVideo()">
+    <div class="modal-content1">
+        <span class="close1" onclick="event.stopPropagation(); closeVideo()"></span>
+        <video controls>
+          <source src="video 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
   <div class="month-names">
     <p>January</p>
     <p>जनवरी</p>
