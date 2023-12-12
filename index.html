@@ -27,9 +27,16 @@
   <div class="month-names">
     <p>January</p>
     <p>जनवरी</p>
-    <a href="https://drive.google.com/u/0/uc?id=1ApJC71e6mbGUe2GYXJF-INURRqCNDk6l&export=download" download="image.jpg">
+    <a href="#" id="openModalBtn">
         <img src="https://i.ibb.co/xgSpwbZ/download-button.png" alt="Download JPEG">
     </a>
+</div>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <div class="modal-content">
+        <span class="close" onclick="event.stopPropagation(); closeModal()"></span>
+        <img src="https://drive.google.com/u/0/uc?id=1ApJC71e6mbGUe2GYXJF-INURRqCNDk6l" alt="Image">
+    </div>
 </div>
   <main class="main2">
     <div class="container2">
