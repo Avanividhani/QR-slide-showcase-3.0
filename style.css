@@ -104,6 +104,91 @@ body {
 /* New styles for Screen 2 */
 
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0; /* Background color for the header */
+  height: 80px; /* Adjust the height as needed */
+  padding: 0 20px; /* Add padding to the header */
+}
+
+.theme-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.theme-name img {
+  width: 150px; /* Adjust the width of the theme image */
+  height: auto;
+  display: block; /* Ensure the image is centered */
+  margin: 0 auto; /* Center the image */
+}
+
+.download-button {
+  margin-left: auto; /* Push the download button to the right */
+}
+
+.download-button img {
+  width: 30px; /* Adjust the width of the download icon */
+  height: auto;
+  cursor: pointer;
+}
+
+/* ... Your existing styles ... */
+
+
+.month-names {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.month-names p {
+  flex: 1;
+  text-align: center;
+  font-size: 40px; /* Adjust the font size as needed */
+  font-weight: bolder;
+}
+
+/* Styles for JPEG download button */
+.month-names a {
+  text-decoration: none; /* Remove underline from link */
+  color: #252a32; /* Set color for the link */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month-names img {
+  width: 30px; /* Adjust the width of the JPEG download button icon */
+  height: auto;
+  margin-top: 5px; /* Adjust spacing between text and icon */
+  margin-right: 20px;
+}
+
+
+button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
 button {
   padding: 15px 30px;
@@ -124,7 +209,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60%;
+  height: 80%;
   overflow: hidden;
   margin: 20px;
 }
@@ -132,7 +217,7 @@ button:hover {
 .container2 {
   display: flex;
   flex-wrap: wrap;
-/*   justify-content: space-around; */
+  justify-content: space-around;
   align-items: center;
   margin: -10px; /* Negative margin to reduce white space */
 }
@@ -171,10 +256,7 @@ button:hover {
   .container2 a {
     width: calc(33.33% - 20px);/* Single column on phones */
   }
-
-
-
-
+}
 
 
 .main button {
@@ -201,3 +283,8 @@ button:hover {
 }
 
 
+.fancybox-button--download img {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-right: 5px; /* Add some right margin for spacing */
+}
