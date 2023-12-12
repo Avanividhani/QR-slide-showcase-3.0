@@ -35,6 +35,21 @@ $(document).ready(function () {
 });
 
 
+function openModal() {
+  document.getElementById('imageModal').style.display = 'flex';
+}
+
+// Function to close the modal
+function closeModal() {
+  document.getElementById('imageModal').style.display = 'none';
+}
+
+// Attach event listener to the button
+document.getElementById('openModalBtn').addEventListener('click', openModal);
+
+
+
+
 
 
 
